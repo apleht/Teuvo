@@ -2,8 +2,6 @@
 #include <SPI.h>
 #include <WiFi.h>
 
-
-
 char ssid[] = "";  //  your network SSID (name)
 char pass[] = "";  // your network password
 
@@ -58,7 +56,6 @@ int x = random(100000);
   // print out the soil water percentage you calculated:
   sprintf(msg, "Mullan kosteus: %d%% ID%d", soil, x);
  
-
  delay(10000000);
  tweet(msg);
 }
